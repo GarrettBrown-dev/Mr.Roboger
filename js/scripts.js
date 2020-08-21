@@ -11,8 +11,10 @@ $(document).ready(function () {
       const stringifiedNum = i.toString();
       if (stringifiedNum.includes("3")) {
         outputArray.push("Won't you be my neighbor?")
-      } else {
-        outputArray.push(stringifiedNum)
+      } else if (stringifiedNum.includes("2")) {
+        outputArray.push("Boop")
+      } else (stringifiedNum.includes("1")) {
+        outputArray.push("Beep")
       }
 
     }
