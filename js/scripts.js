@@ -1,26 +1,23 @@
-const numbers = ["1", "2", "3"];
+const numbers = [1, 2, 3];
 
 
 $(document).ready(function () {
   $("form#formsubmit").submit(function (event) {
     event.preventDefault();
-    const userWord = $("#userinput").val();
-    const arrayOfInput = [userWord];
+    const userNumber = $("#userNumber").val();
+    const arrayOfInput = [userNumber];
     console.log(arrayOfInput);
-    // arrayOfInput.push(userWord);
-    const pigLatin = arrayOfInput.map(function (text) {
+    const roboWord = arrayOfInput.map(function (text) {
       let transformedText;
-      const firstLetterOfWord = text.split('')[0];
       // const twoLetters = text.split('')[]
-      console.log("firstLetterOfWord", firstLetterOfWord);
       // does first letter in text contain /[aieou]/
       // 1. seperate out the first letter in text string
       // 2. evalutate first letter against regex
-      if (firstLetterOfWord.match(/[aieou]/)) {
+      if (userNumber.match(/[1]/)) {
         console.log("inside first block");
-        transformedText = text + 'way';
+        transformedText = text + 'Beep';
         return transformedText
-      } else if (!firstLetterOfWord.match(/[aieou]/)) {
+      } else if (!firstLetterOfWord.match(/[2]/)) {
         console.log("inside second block");
         transformedText = text.split('');
         console.log(transformedText);
