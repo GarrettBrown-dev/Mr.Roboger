@@ -1,6 +1,5 @@
 const numbers = [1, 2, 3];
 
-
 $(document).ready(function () {
   $("form#formsubmit").submit(function (event) {
     event.preventDefault();
@@ -15,8 +14,7 @@ $(document).ready(function () {
         outputArray.push("Boop.");
       } else (stringifiedNum.includes("1")); {
         outputArray.push("Beep");
-        console.log(outputArray)
       }
-    } return outputArray
+    } console.log(outputArray)
   });
 });
