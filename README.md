@@ -6,7 +6,11 @@
 
 ## Description
 
-_This is intended as a proof of knowledge for week 3 at Epicodus. Returns a different output depending on the numbers inputted._
+_This is intended as a proof of knowledge for week 3 at Epicodus. Returns a different output depending on the numbers inputted.
+
+1.) Generates array with numbers based on user input.
+2.) Returns strings that correlate to given numbers to strings. 
+3.) output array to htm _
 
 ## Setup/Installation Requirements
 
