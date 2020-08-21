@@ -15,9 +15,8 @@ $(document).ready(function () {
         outputArray.push("Boop.");
       } else (stringifiedNum.includes("1")); {
         outputArray.push("Beep");
-
         console.log(outputArray)
       }
-    }
+    } return outputArray
   });
 });
