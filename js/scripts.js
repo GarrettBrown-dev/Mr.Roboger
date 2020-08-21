@@ -1,20 +1,38 @@
-const numbers = [1, 2, 3];
+const numbers = [1, 2, 3,]
+
+function arrayGenerator(number) {
+  const generatedArray = [];
+  for (let i = 0; i <= number; i++) {
+    generatedArray.push(i);
+  }
+  return generatedArray;
+}
 
 $(document).ready(function () {
   $("form#formsubmit").submit(function (event) {
     event.preventDefault();
     const userNumber = $("#userNumber").val();
-    const outputArray = [];
-    //const arrayOfInput = [userNumber];
-    for (let i = 0; i <= userNumber; i++) {
-      const stringifiedNum = i.toString();
+    const numberArray = arrayGenerator(userNumber);
+    const outputArray = numberArray.map(function (index) {
+      const stringifiedNum = index.toString();
       if (stringifiedNum.includes("3")) {
-        outputArray.push("Won't you be my neighbor?")
+        return "Won't you be my neighbor?";
       } else if (stringifiedNum.includes("2")) {
-        outputArray.push("Boop.");
-      } else (stringifiedNum.includes("1")); {
-        outputArray.push("Beep");
+        return "Boop.";
+      } else if (stringifiedNum.includes("1")) {
+        return "Beep";
+      } else {
+        return stringifiedNum;
       }
-    } console.log(outputArray)
+    });
+    $("#outputArray").append(outputArray);
+    console.log(outputArray)
   });
 });
+
+// Numbers that contain a 1: all digits are replaced (all digits) with "Beep!"
+// Numbers that contain a 2: all digits are replaced (all digits) with "Boop!"
+// Numbers that contain a 3: all digits are replaced (all digits) with "Won't you be my neighbor?"
+// The number 13 should be replaced with "Won't you be my neighbor?"
+// The number 21 should be replaced with "Boop".
+// The number 32 should be replaced with "Won't you be my neighbor?"
