@@ -16,17 +16,7 @@ $(document).ready(function () {
         transformedText.push("Beep");
         console.log("inside first block");
         return transformedText
-      } else if (!firstLetterOfWord.match(/[2]/)) {
-        console.log("inside second block");
-        transformedText = text.split('');
-        console.log(transformedText);
-        transformedText.shift();
-        transformedText.push(firstLetterOfWord);
-        transformedText.push("ay");
-        transformedText = transformedText.join('');
-        console.log("second block transformed text", transformedText);
-        return transformedText;
-      }
+      } else if 
     });
   });
 });
