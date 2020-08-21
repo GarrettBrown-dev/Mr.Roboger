@@ -7,10 +7,24 @@ $(document).ready(function () {
     event.preventDefault();
     let userNumber = $("#userinput").val();
     let arrayOfInput = [];
-    arrayOfInput.push(userWord);
-    const pigLatin = arrayOfInput.map(function (text) {
-      console.log(pigLatin);
-      if (/[aieou]/) {
-        arrayOfInput.push("way");
-        arrayOfInput.join((''));
-      });
+    arrayOfInput.push(userNumber);
+    const roboWord = arrayOfInput.map(function (text) {
+      if (/[1]/) {
+        arrayOfInput.push("Beep");
+        arrayOfInput.join("");
+        console.log(userNumber)
+      }
+      else if (/[^aieou]/i) {
+        arrayOfInput.replace(/[aieou]/gi, (charAt(0) + "Boop"));
+      }
+      else if (/[qu]/gi) {
+        $(string).slice(+ "quay");
+      }
+
+      else if ("begins with y"); {
+      }
+      return (text);
+    });
+    $("#translation").show();
+  });
+});
