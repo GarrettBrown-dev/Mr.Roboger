@@ -8,9 +8,12 @@
 
 _This is intended as a proof of knowledge for week 3 at Epicodus. Returns a different output depending on the numbers inputted.
 
-1.) Generates array with numbers based on user input.
-2.) Returns strings that correlate to given numbers to strings. 
-3.) output array to htm _
+// Numbers that contain a 1: all digits are replaced (all digits) with "Beep!"
+// Numbers that contain a 2: all digits are replaced (all digits) with "Boop!"
+// Numbers that contain a 3: all digits are replaced (all digits) with "Won't you be my neighbor?"
+// The number 13 should be replaced with "Won't you be my neighbor?"
+// The number 21 should be replaced with "Boop".
+// The number 32 should be replaced with "Won't you be my neighbor?"_
 
 ## Setup/Installation Requirements
 
