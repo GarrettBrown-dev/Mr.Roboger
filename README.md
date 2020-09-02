@@ -13,7 +13,8 @@ _This is intended as a proof of knowledge for week 3 at Epicodus. Returns a diff
 // Numbers that contain a 3: all digits are replaced (all digits) with "Won't you be my neighbor?"
 // The number 13 should be replaced with "Won't you be my neighbor?"
 // The number 21 should be replaced with "Boop".
-// The number 32 should be replaced with "Won't you be my neighbor?"_
+// The number 32 should be replaced with "Won't you be my neighbor?"
+// When a new number is inputted, the text will be replaced with the new number's text._
 
 ## Setup/Installation Requirements
 
